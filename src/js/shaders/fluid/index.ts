@@ -1,0 +1,8 @@
+export { advectionShader } from './advection.glsl'
+export { clearShader } from './clear.glsl'
+export { curlShader } from './curl.glsl'
+export { divergenceShader } from './divergence.glsl'
+export { gradientSubtractShader } from './gradient.glsl'
+export { pressureShader } from './pressure.glsl'
+export { splatShader } from './splat.glsl'
+export { vorticityShader } from './vorticity.glsl'

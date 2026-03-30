@@ -1,0 +1,59 @@
+{
+  "name": "fluid-simulation",
+  "version": "1.0.0",
+  "description": "Interactive WebGL fluid dynamics simulation based on Navier-Stokes equations",
+  "author": "Simon",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/fluid-simulation.umd.js",
+  "module": "./dist/fluid-simulation.es.js",
+  "types": "./dist/lib.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/lib.d.ts",
+      "import": "./dist/fluid-simulation.es.js",
+      "require": "./dist/fluid-simulation.umd.js"
+    },
+    "./style.css": "./dist/fluid-simulation.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "dev:host": "vite --host",
+    "build": "tsc --noEmit && vite build",
+    "build:lib": "tsc --noEmit && vite build --config vite.lib.config.ts",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix",
+    "format": "prettier --write \"src/**/*.{ts,css,html}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,css,html}\""
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "@types/node": "^25.0.8",
+    "eslint": "^9.39.2",
+    "prettier": "^3.2.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.53.0",
+    "vite": "^7.3.1"
+  },
+  "keywords": [
+    "fluid",
+    "simulation",
+    "webgl",
+    "navier-stokes",
+    "interactive",
+    "graphics",
+    "physics"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Locko2901/webgl-fluid-simulation"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
